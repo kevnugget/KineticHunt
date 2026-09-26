@@ -4,7 +4,8 @@ A simple word hunt (Boggle-style) solver. Given a grid of letters, it finds ever
 
 ## Requirements
 
-- Python 3
+- Python 3.12.3
+- Tested on Windows 11 Pro 10.0.26200
 
 ## Setup
 
