@@ -25,6 +25,18 @@ def load_dictionary(path, min_length=3):
     return trie
 
 
+def get_neighbors(row, col, rows, cols):
+    neighbors = []
+    for dr in (-1, 0, 1):
+        for dc in (-1, 0, 1):
+            if dr == 0 and dc == 0:
+                continue
+            r, c = row + dr, col + dc
+            if 0 <= r < rows and 0 <= c < cols:
+                neighbors.append((r, c))
+    return neighbors
+
+
 def print_words_by_score(words):
     scores = {3: 100, 4: 400, 5: 800, 6: 1400, 7: 1800}
 
